@@ -28,7 +28,7 @@ router.get('/:id', async (req, res, next) => {
             throw new Error("O objeto procurado não foi encontrado");
         }
 
-        if(personagem.classe && req.query.render === true){
+        if(personagem.classe && req.query.render === "true"){
             try{
                 var classe = await axios.get('https://pfinalppw2thiago.herokuapp.com/api/classes/'+personagem.classe);
                 if (classe.status === 200) {
