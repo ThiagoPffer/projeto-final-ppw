@@ -30,7 +30,7 @@ router.get('/:id', async (req, res, next) => {
 
         if(personagem.classe){
             try{
-                var classe = await axios.get('http://localhost:8080/api/classes/'+personagem.classe);
+                var classe = await axios.get('https://pfinalppw2thiago.herokuapp.com/api/classes/'+personagem.classe);
                 if (classe.status === 200) {
                     personagem.classe = classe.data.nome;
                 }
