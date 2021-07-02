@@ -6,7 +6,7 @@ const axios = require('axios');
 router.get('/', async (req, res, next) => {
     try{
         let filter = {};
-        if(req.query.classe) filter.classe = req.query.classe;
+        if(req.query.sexo) filter.sexo = req.query.sexo;
         const limit = Math.min(parseInt(req.query.limit), 100) || 100;
         const skip = parseInt(req.query.skip) || 0;
 
