@@ -43,7 +43,7 @@ router.get('/:id', async (req, res, next) => {
             try{
                 var jogo = await axios.get('https://pfinalppw2.herokuapp.com/api/jogos/'+personagem.jogo);
                 if (jogo.status === 200) {
-                    personagem.jogo = jogo.data;
+                    personagem.jogo = jogo.data.nome;
                 }
             } catch (err){
                 console.log("Erro desconhecido ao setar propriedade 'jogo': " + err);
