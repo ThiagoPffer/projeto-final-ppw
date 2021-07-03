@@ -1,4 +1,6 @@
 <h1>Projeto Final PPW 2</h1>
+<p>Projeto desenvolvido como trabalho final para a disciplina de Programação para Web II, ministrada pelo prof. Ramon Venson</p>
+
 <p>Disponível publicamente na URL: <a>https://pfinalppw2thiago.herokuapp.com/api/</a></p>
 
 <h2>Estrutura dos recursos:</h2>
